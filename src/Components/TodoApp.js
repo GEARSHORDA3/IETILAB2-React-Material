@@ -77,7 +77,6 @@ export class TodoApp extends React.Component {
                     {this.renderRow(this.state.items)}
                     </tbody>
                 </table>
-                <Login/>
             </div>
         );
     }

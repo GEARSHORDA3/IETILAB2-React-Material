@@ -40,10 +40,10 @@ export class Login extends React.Component{
     handleLogging() {
         if(this.state.pass==localStorage.getItem(this.state.user)){
             alert("Successful login")
-            localStorage.setItem('isLoggedLn', "true")
+            localStorage.setItem('isLoggedLn', true)
         }else{
             alert("Sign up failed or not registration")
-            localStorage.setItem('isLoggedLn', "false")
+            localStorage.setItem('isLoggedLn', false)
             localStorage.setItem(this.state.user, this.state.pass)
         }
         console.log(localStorage.getItem('isLoggedLn') + "  que cambio")

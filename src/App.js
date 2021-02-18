@@ -24,7 +24,25 @@ export class App extends Component {
 	constructor(props) {
 		super(props)
 		this.state = {isLoggedLn : "false"}
-		this.handleLink()
+		this.handleLink = this.handleLink.bind(this)
+	}
+
+	handleLink() {
+
+		console.log(localStorage.getItem('isLoggedLn') + " handleLink(event)")
+		console.log("boolenao: "+localStorage.getItem("isLoggedLn").includes("true") )
+		if( localStorage.getItem("isLoggedLn").includes("true") ){
+			console.log("entrando")
+			this.setState({
+				isLoggedLn : "true"
+			});
+		}else{
+			console.log("no entro")
+			this.setState({
+				isLoggedLn : "false"
+			});
+		}
+		console.log("handleLink: "+this.state.isLoggedLn)
 	}
 
 	render() {
@@ -44,7 +62,7 @@ export class App extends Component {
 						</ul>
 
 						<div>
-							{this.state.isLoggedLn=="true" ? (
+							{this.state.isLoggedLn==="true" ? (
 								<Route path="/todo" component={TodoAppView} />
 							) : (
 								<Route exact path="/" component={LoginView} />
@@ -55,27 +73,6 @@ export class App extends Component {
 			</Router>
 		);
 	}
-
-	handleLink(event) {
-
-		console.log(localStorage.getItem('isLoggedLn') + " llegando2")
-		console.log("boolenao: "+localStorage.getItem("isLoggedLn").includes("true") )
-		if( localStorage.getItem("isLoggedLn").includes("true") ){
-			console.log("entrando")
-			this.setState({
-				isLoggedLn : localStorage.getItem("isLoggedLn").toString
-			});
-		}else{
-			console.log("no entro")
-			this.setState({
-				isLoggedLn : "false"
-			});
-		}
-		console.log("handleLink: "+this.state.isLoggedLn)
-	}
-
-
-
 
 }
 
