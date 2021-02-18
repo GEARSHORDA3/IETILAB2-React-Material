@@ -1,4 +1,4 @@
-# Lab1 Ieti
+# Lab2 Ieti
 
 Autor: David Andres Vargas Leon
 
@@ -7,14 +7,14 @@ Autor: David Andres Vargas Leon
 1. Clonar repositorio:
 
 ```
-git clonehttps://github.com/GEARSHORDA3/IETILAB1-todo-app
+git https://github.com/GEARSHORDA3/IETILAB2-React-Material
 
 ```
 
 2. Acceder al aplicativo:
 
 ```
-cd IETILAB1-todo-app
+cd IETILAB2-React-Material
 ```
 
 3. Ejecutar los siguientes comandos para utilizar la aplicación:
