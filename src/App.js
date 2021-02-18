@@ -23,15 +23,16 @@ export class App extends Component {
 
 	constructor(props) {
 		super(props)
-		this.state = {isLoggedLn : false}
-		this.handleLogChange = this.handleLogChange.bind(this);
+		this.state = {isLoggedLn : "false"}
+		this.handleLink()
 	}
 
-
 	render() {
+		console.log(localStorage.getItem('isLoggedLn') + " despues de render")
+		console.log(this.state.isLoggedLn)
 		return (
 			<Router>
-				<Card className="App">
+				<Card className="App" onSubmit={this.handleLink}>
 					<CardMedia>
 						<img src={imageUrl} className="photo"/>
 						<h1 className="App-title">TODO React App</h1>
@@ -43,7 +44,7 @@ export class App extends Component {
 						</ul>
 
 						<div>
-							{this.state.isLoggedLn ? (
+							{this.state.isLoggedLn=="true" ? (
 								<Route path="/todo" component={TodoAppView} />
 							) : (
 								<Route exact path="/" component={LoginView} />
@@ -55,9 +56,25 @@ export class App extends Component {
 		);
 	}
 
-	handleLogChange() {
-		alert(this.state.isLoggedLn)
+	handleLink(event) {
+
+		console.log(localStorage.getItem('isLoggedLn') + " llegando2")
+		console.log("boolenao: "+localStorage.getItem("isLoggedLn").includes("true") )
+		if( localStorage.getItem("isLoggedLn").includes("true") ){
+			console.log("entrando")
+			this.setState({
+				isLoggedLn : localStorage.getItem("isLoggedLn").toString
+			});
+		}else{
+			console.log("no entro")
+			this.setState({
+				isLoggedLn : "false"
+			});
+		}
+		console.log("handleLink: "+this.state.isLoggedLn)
 	}
+
+
 
 
 }
