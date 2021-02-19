@@ -309,11 +309,4 @@ Después de loguearse con los valores guardados de usuario y clave con local sto
 ![](https://github.com/GEARSHORDA3/IETILAB2-React-Material/blob/main/img/parte3.2.png)
    
 
-### Referencias
-
-1. Understanding this.setState({ [name]: value}). (2021). Retrieved 9 February 2021, from https://medium.com/@bretdoucette/understanding-this-setstate-name-value-a5ef7b4ea2b4
-
-2. Table fill with React - JSFiddle - Code Playground. (2021). Retrieved 9 February 2021, from https://jsfiddle.net/wirtaw/ckcf82ct/
-
-3. React, D., Taveras, A., Gomes, A., S, G., Gonzalez, E., & Hasan, H. (2021). Dynamically Creating Table Rows With React. Retrieved 9 February 2021, from https://stackoverflow.com/questions/51197205/dynamically-creating-table-rows-with-react/51197342
 
