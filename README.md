@@ -251,6 +251,12 @@ import {BrowserRouter as Router, Link, Route} from 'react-router-dom'
 
 6. Run the application and test that the navigation works.
 
+# Image: Show the result
+
+Se observa que tanto el campo de login como el de ingreso de activiades se visualizan en la misma vista.    
+
+![](https://github.com/GEARSHORDA3/IETILAB2-React-Material/blob/main/img/parte1.png)
+
 7. Read the _React Route Training_ documentation and learn about the BrowserRouter Component:
 https://reacttraining.com/react-router/web/example/basic
 
@@ -261,6 +267,11 @@ Tip: Don't attempt to use the _Redirect_ component of the React Router to handle
 
 9. Set the default value of *isLoggedIn* to false and then add a condition inside the render method that renders the correct view.
 
+# Image: Show the result
+
+Se observa que solo se puede loguear mas no ingresar a Todo por el isLoggedIn.    
+
+![](https://github.com/GEARSHORDA3/IETILAB2-React-Material/blob/main/img/parte3.png)
 
 ## Part 3: Local Storage
 
@@ -286,6 +297,16 @@ This will prevent the user authentication every time!
 4. Run the application and then stop the server and verify the data is persisted.
 
 Tip: You can use the Google Chrome Developer tools under the Application tab to explore the Local Storage. 
+
+# Image: Show the result
+
+Se observa que primero se tiene que loguear para acceder a Todo, donde se confirma con una alerta.    
+
+![](https://github.com/GEARSHORDA3/IETILAB2-React-Material/blob/main/img/parte3.png)
+
+Después de loguearse con los valores guardados de usuario y clave con local storage, se obtiene el acceso a la vista de ingreso de actividades.    
+
+![](https://github.com/GEARSHORDA3/IETILAB2-React-Material/blob/main/img/parte3.2.png)
    
 
 ### Referencias
