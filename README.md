@@ -302,7 +302,7 @@ Tip: You can use the Google Chrome Developer tools under the Application tab to 
 
 Se observa que primero se tiene que loguear para acceder a Todo, donde se confirma con una alerta.    
 
-![](https://github.com/GEARSHORDA3/IETILAB2-React-Material/blob/main/img/parte3.png)
+![](https://github.com/GEARSHORDA3/IETILAB2-React-Material/blob/main/img/parte3.1.png)
 
 Después de loguearse con los valores guardados de usuario y clave con local storage, se obtiene el acceso a la vista de ingreso de actividades.    
 
